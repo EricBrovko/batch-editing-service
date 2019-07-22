@@ -4,11 +4,11 @@ const stringInject = (string, key, value) => (
 
 const countBatchQueryResults = (results) => (
     results.reduce((acc, result) => {
-        result ? acc.successCount++ : acc.faildCount++;
+        result ? acc.successCount++ : acc.failedCount++;
         return acc;
     }, {
             successCount: 0,
-            faildCount: 0,
+            failedCount: 0,
         })
 );
 

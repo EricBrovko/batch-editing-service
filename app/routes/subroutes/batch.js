@@ -5,6 +5,6 @@ const controllers = require("../../controllers/batch");
 const router = express.Router();
 
 // TODO: Add Rate limit as a middleware
-router.put("/", controllers.put);
+router.put("/", controllers.runRequests);
 
 module.exports = router;
