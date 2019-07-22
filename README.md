@@ -1,4 +1,4 @@
-### Batch Editing Service
+# Batch Editing Service
 
 ## How to run the server
 
