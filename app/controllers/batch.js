@@ -12,6 +12,6 @@ module.exports = {
       .then(results => apiCore.sendSuccessResponse(req, res, {
         statuses: countBatchQueryResults(results)
       }))
-      .catch(error => apiCore.sendSuccessResponse(req, res, { error }));
+      .catch(error => apiCore.sendErrorResponse(req, res, { error }));
   },
 };
